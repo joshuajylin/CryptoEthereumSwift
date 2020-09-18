@@ -568,8 +568,8 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"$(SRCROOT)/Libraries/openssl/lib",
-					"$(SRCROOT)/Libraries/secp256k1/lib",
+					"$(SRCROOT)/Libraries/openssl/lib/ios",
+					"$(SRCROOT)/Libraries/secp256k1/lib/ios",
 				);
 				MODULEMAP_FILE = "$(SRCROOT)/CryptoEthereumSwift/SupportingFiles/CryptoEthereumSwift.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshuajylin.CryptoEthereumSwift;
@@ -611,8 +611,8 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"$(SRCROOT)/Libraries/openssl/lib",
-					"$(SRCROOT)/Libraries/secp256k1/lib",
+					"$(SRCROOT)/Libraries/openssl/lib/ios",
+					"$(SRCROOT)/Libraries/secp256k1/lib/ios",
 				);
 				MODULEMAP_FILE = "$(SRCROOT)/CryptoEthereumSwift/SupportingFiles/CryptoEthereumSwift.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshuajylin.CryptoEthereumSwift;
@@ -725,8 +725,8 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"$(SRCROOT)/Libraries/openssl/lib",
-					"$(SRCROOT)/Libraries/secp256k1/lib",
+					"$(SRCROOT)/Libraries/openssl/lib/macos",
+					"$(SRCROOT)/Libraries/secp256k1/lib/macos",
 				);
 				MODULEMAP_FILE = "$(SRCROOT)/CryptoEthereumSwift/SupportingFiles/CryptoEthereumSwift.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshuajylin.CryptoEthereumSwift;
@@ -769,8 +769,8 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"$(SRCROOT)/Libraries/openssl/lib",
-					"$(SRCROOT)/Libraries/secp256k1/lib",
+					"$(SRCROOT)/Libraries/openssl/lib/macos",
+					"$(SRCROOT)/Libraries/secp256k1/lib/macos",
 				);
 				MODULEMAP_FILE = "$(SRCROOT)/CryptoEthereumSwift/SupportingFiles/CryptoEthereumSwift.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshuajylin.CryptoEthereumSwift;
