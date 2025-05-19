@@ -481,7 +481,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -540,7 +540,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -584,6 +584,7 @@
 					"$(SRCROOT)/Libraries/openssl/lib/ios",
 					"$(SRCROOT)/Libraries/secp256k1/lib/ios",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MODULEMAP_FILE = "$(SRCROOT)/CryptoEthereumSwift/SupportingFiles/CryptoEthereumSwift.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshuajylin.CryptoEthereumSwift;
 				PRODUCT_NAME = CryptoEthereumSwift;
@@ -629,6 +630,7 @@
 					"$(SRCROOT)/Libraries/openssl/lib/ios",
 					"$(SRCROOT)/Libraries/secp256k1/lib/ios",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MODULEMAP_FILE = "$(SRCROOT)/CryptoEthereumSwift/SupportingFiles/CryptoEthereumSwift.modulemap";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshuajylin.CryptoEthereumSwift;
@@ -653,6 +655,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuzushioh.CryptoEthereumSwiftTests;
 				PRODUCT_NAME = CryptoEthereumSwiftTests;
 				SWIFT_VERSION = 4.0;
@@ -671,6 +674,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuzushioh.CryptoEthereumSwiftTests;
 				PRODUCT_NAME = CryptoEthereumSwiftTests;
 				SWIFT_VERSION = 4.0;
@@ -689,6 +693,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuzushioh.Example;
 				PRODUCT_NAME = Example;
 				SWIFT_VERSION = 4.0;
@@ -707,6 +712,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuzushioh.Example;
 				PRODUCT_NAME = Example;
 				SWIFT_VERSION = 4.0;
@@ -745,6 +751,7 @@
 					"$(SRCROOT)/Libraries/openssl/lib/macos",
 					"$(SRCROOT)/Libraries/secp256k1/lib/macos",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MODULEMAP_FILE = "$(SRCROOT)/CryptoEthereumSwift/SupportingFiles/CryptoEthereumSwift.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshuajylin.CryptoEthereumSwift;
 				PRODUCT_NAME = CryptoEthereumSwift;
@@ -789,6 +796,7 @@
 					"$(SRCROOT)/Libraries/openssl/lib/macos",
 					"$(SRCROOT)/Libraries/secp256k1/lib/macos",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MODULEMAP_FILE = "$(SRCROOT)/CryptoEthereumSwift/SupportingFiles/CryptoEthereumSwift.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshuajylin.CryptoEthereumSwift;
 				PRODUCT_NAME = CryptoEthereumSwift;
