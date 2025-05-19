@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,8 +17,8 @@
 		1AD1D64B20B7EF31007AFF80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD1D64920B7EF31007AFF80 /* LaunchScreen.storyboard */; };
 		1AD1D65120B7F009007AFF80 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD1D65020B7F009007AFF80 /* Crypto.swift */; };
 		1AD1D65220B7F07F007AFF80 /* Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD1D63620B7E95A007AFF80 /* Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		4205965F22EB219F0093DA73 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C40A9C22EB13550092268E /* CryptoSwift.framework */; };
-		4205966022EB21AE0093DA73 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42C40A9A22EB12FB0092268E /* CryptoSwift.framework */; };
+		4257A15C2DDAF07700F3DD4C /* CryptoSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4257A15B2DDAF07700F3DD4C /* CryptoSwift.xcframework */; };
+		4257A15D2DDAF07700F3DD4C /* CryptoSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4257A15B2DDAF07700F3DD4C /* CryptoSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		42C40A8822EB0D9A0092268E /* EllipticCurveEncrypterSecp256k1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD1D65320B7F112007AFF80 /* EllipticCurveEncrypterSecp256k1.swift */; };
 		42C40A8922EB0D9A0092268E /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD1D65020B7F009007AFF80 /* Crypto.swift */; };
 		42C40A8A22EB0D9A0092268E /* Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD1D63720B7E96E007AFF80 /* Internal.m */; };
@@ -36,6 +36,20 @@
 			remoteInfo = CryptoEthereumSwift;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4257A15E2DDAF07700F3DD4C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4257A15D2DDAF07700F3DD4C /* CryptoSwift.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1AD1D61B20B7E822007AFF80 /* CryptoEthereumSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoEthereumSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,9 +69,8 @@
 		1AD1D64C20B7EF31007AFF80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AD1D65020B7F009007AFF80 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		1AD1D65320B7F112007AFF80 /* EllipticCurveEncrypterSecp256k1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipticCurveEncrypterSecp256k1.swift; sourceTree = "<group>"; };
+		4257A15B2DDAF07700F3DD4C /* CryptoSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CryptoSwift.xcframework; path = ../../Build/CryptoSwift.xcframework; sourceTree = "<group>"; };
 		42C40A9422EB0D9A0092268E /* CryptoEthereumSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoEthereumSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		42C40A9A22EB12FB0092268E /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/Mac/CryptoSwift.framework; sourceTree = SOURCE_ROOT; };
-		42C40A9C22EB13550092268E /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4205965F22EB219F0093DA73 /* CryptoSwift.framework in Frameworks */,
+				4257A15C2DDAF07700F3DD4C /* CryptoSwift.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4205966022EB21AE0093DA73 /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,8 +134,6 @@
 			children = (
 				1AD1D65720B7F2B0007AFF80 /* Source */,
 				1AD1D65820B7F2BD007AFF80 /* SupportingFiles */,
-				42C40A9C22EB13550092268E /* CryptoSwift.framework */,
-				42C40A9A22EB12FB0092268E /* CryptoSwift.framework */,
 			);
 			path = CryptoEthereumSwift;
 			sourceTree = "<group>";
@@ -173,6 +183,7 @@
 		42C40A9E22EB146B0092268E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4257A15B2DDAF07700F3DD4C /* CryptoSwift.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -209,6 +220,7 @@
 				1AD1D61720B7E822007AFF80 /* Frameworks */,
 				1AD1D61820B7E822007AFF80 /* Headers */,
 				1AD1D61920B7E822007AFF80 /* Resources */,
+				4257A15E2DDAF07700F3DD4C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -551,9 +563,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/Libraries/openssl/include",
@@ -576,6 +589,7 @@
 				PRODUCT_NAME = CryptoEthereumSwift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = iphoneos;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT) $(SRCROOT)/Libraries";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -594,9 +608,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/Libraries/openssl/include",
@@ -615,10 +630,12 @@
 					"$(SRCROOT)/Libraries/secp256k1/lib/ios",
 				);
 				MODULEMAP_FILE = "$(SRCROOT)/CryptoEthereumSwift/SupportingFiles/CryptoEthereumSwift.modulemap";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshuajylin.CryptoEthereumSwift;
 				PRODUCT_NAME = CryptoEthereumSwift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = iphoneos;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT) $(SRCROOT)/Libraries";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
